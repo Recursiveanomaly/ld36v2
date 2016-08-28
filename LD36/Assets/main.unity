@@ -953,10 +953,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 11436952, guid: 3e64e5bd03dc27b468df1a5bb000bdd7, type: 2}
-      propertyPath: pictographName
-      value: money
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3e64e5bd03dc27b468df1a5bb000bdd7, type: 2}
   m_IsPrefabParent: 0
