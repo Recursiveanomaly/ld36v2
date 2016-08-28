@@ -33,6 +33,7 @@ public class InfoPopup : MonoBehaviour
             m_startingX = m_tweenGUI.transform.position.x;
             m_startingXSet = true;
         }
+        gameObject.SetActive(false);
         m_tweenGUI.transform.DOMoveX(m_startingX, 0f);
     }
 
@@ -43,7 +44,7 @@ public class InfoPopup : MonoBehaviour
             m_startingX = m_tweenGUI.transform.position.x;
             m_startingXSet = true;
         }
-        m_nonTweenGUI.gameObject.SetActive(false);
+        gameObject.SetActive(false);
         m_isHidden = true;
         m_tweenGUI.transform.DOMoveX(m_startingX - 65, time);
     }
@@ -56,7 +57,6 @@ public class InfoPopup : MonoBehaviour
             m_startingXSet = true;
         }
         gameObject.SetActive(true);
-        m_nonTweenGUI.gameObject.SetActive(true);
         m_isHidden = false;
         m_tweenGUI.transform.DOMoveX(m_startingX - 665, 0.5f);
     }

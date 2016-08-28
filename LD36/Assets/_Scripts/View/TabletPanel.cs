@@ -61,7 +61,8 @@ public class TabletPanel : SingletonMonoBehaviour<TabletPanel>
         if (m_infoPopup != null) m_infoPopup.Peek();
         if (m_defaultGUI != null) m_defaultGUI.gameObject.SetActive(false);
 
-        Camera.main.transform.position = pictograph.transform.position + m_guessPictographCameraOffset;
+        //Camera.main.transform.position = pictograph.transform.position + m_guessPictographCameraOffset;
+        Camera.main.transform.DOMove(pictograph.transform.position + m_guessPictographCameraOffset, 0.25f);
 
         m_guessPopup.Setup(pictograph);
         m_guessPopup.gameObject.SetActive(true);
