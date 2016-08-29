@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class GuessPopup : MonoBehaviour 
 {
@@ -11,17 +12,55 @@ public class GuessPopup : MonoBehaviour
 
     Pictograph m_currentPictograph;
 
+    public GameObject m_helpRoot;
+    float m_helpStartPositionX;
+    bool m_helpStartSaved = false;
+
     public void Setup(Pictograph pictograph)
     {
         m_inputField.text = "";
         m_showTime = Time.time;
         m_currentPictograph = pictograph;
+        ResetHelp();
     }
 
     public void FocusInputBox()
     {
         GamePanelManager.Instance.m_eventSystem.SetSelectedGameObject(m_inputField.gameObject, null);
         m_inputField.ActivateInputField();
+    }
+
+    public void ShowHelp()
+    {
+        if (!m_helpStartSaved)
+        {
+            m_helpStartSaved = true;
+            m_helpStartPositionX = m_helpRoot.gameObject.transform.position.x;
+        }
+
+        m_helpRoot.transform.DOMoveX(m_helpStartPositionX + 400, 0.5f);
+    }
+
+    public void HideHelp()
+    {
+        if (!m_helpStartSaved)
+        {
+            m_helpStartSaved = true;
+            m_helpStartPositionX = m_helpRoot.gameObject.transform.position.x;
+        }
+
+        m_helpRoot.transform.DOMoveX(m_helpStartPositionX, 0.5f);
+    }
+
+    public void ResetHelp()
+    {
+        if (!m_helpStartSaved)
+        {
+            m_helpStartSaved = true;
+            m_helpStartPositionX = m_helpRoot.gameObject.transform.position.x;
+        }
+
+        m_helpRoot.gameObject.transform.position = new Vector3(m_helpStartPositionX, m_helpRoot.gameObject.transform.position.y, m_helpRoot.gameObject.transform.position.z);
     }
 
     void Update()

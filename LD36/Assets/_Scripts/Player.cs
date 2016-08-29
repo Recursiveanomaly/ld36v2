@@ -8,6 +8,60 @@ public class Player : SingletonMonoBehaviour<Player>
 
     Dictionary<string, List<string>> m_connectedWords = new Dictionary<string,List<string>>();
 
+    [NonSerialized]
+    public List<string> m_allWords = new List<string>()
+    {
+        "make"       ,
+        "has"        ,
+        "are"        ,
+        "with"       ,
+        "of"         ,
+        "from"       ,
+        "for"        ,
+        "man"        ,
+        "woman"      ,
+        "no"         ,
+        "in"         ,
+
+        "love"       ,
+        "make"       ,
+        "name"       ,
+        "child"      ,
+        "kill"       ,
+        "food"       ,
+        "eat"        ,
+        "gods"       ,
+        "cruel"      ,
+        "giants"     ,
+        "trade"      ,
+        "animal"     ,
+        "money"      ,
+        "steal"      ,
+        "sword"      ,
+        "fire"       ,
+
+        "horse"      ,
+        "travel"     ,
+        "many"       ,
+        "city"       ,
+        "ship"       ,
+        "water"      ,
+        "exit"       ,
+        "win"        ,
+        "queen"      ,
+        "king"       ,
+
+        "tree"       ,
+        "hurt"       ,
+        "witch"      ,
+        "guard"      ,
+        "gold"       ,
+        "hero"       ,
+        "sleep"      ,
+        "snake"      ,
+        "ram"        ,
+    };
+
     int m_unlockCount = 0;
 
     protected virtual void Awake()
