@@ -1416,7 +1416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b7a1dd488799e342a71c3cb96bd0720, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pictographName: queen
+  pictographName: woman
   answer: {fileID: 10298704}
 --- !u!114 &11444922
 MonoBehaviour:
