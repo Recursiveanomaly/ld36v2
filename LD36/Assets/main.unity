@@ -6080,6 +6080,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1436069899}
   - 82: {fileID: 1436069900}
+  - 114: {fileID: 1436069902}
+  - 82: {fileID: 1436069901}
   m_Layer: 0
   m_Name: AudioThinger
   m_TagString: Untagged
@@ -6173,6 +6175,100 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!82 &1436069901
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1436069898}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!114 &1436069902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1436069898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c3d6880f2edea449b6b447e19232e81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_audioSource: {fileID: 1436069901}
+  UIclick: {fileID: 8300000, guid: 31960f9655668e74c9d417f35313dccf, type: 3}
+  guessedWrong: {fileID: 8300000, guid: efa49870cd43d0b4290462955b844cbe, type: 3}
+  paper: {fileID: 8300000, guid: 8c57110de987b3d488ad40cdf8ef24f3, type: 3}
+  solvedCity: {fileID: 8300000, guid: 6dfbefc03ba841b4b9dd879cecfb813e, type: 3}
+  solvedTablet: {fileID: 8300000, guid: 2515ca9a974dc0940ba8be141641ec31, type: 3}
+  solvedWord: {fileID: 8300000, guid: 6b1e8d228b19b5b4993bda9d06bb251e, type: 3}
+  switchBetween: {fileID: 8300000, guid: 855ecd91a6a32cc43a864bef459aed70, type: 3}
+  switchTablet: {fileID: 8300000, guid: e6c79b7a61d6a424c8a8d2e889f3018e, type: 3}
 --- !u!1 &1446257533
 GameObject:
   m_ObjectHideFlags: 0
