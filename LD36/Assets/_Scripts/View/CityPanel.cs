@@ -40,8 +40,8 @@ public class CityPanel : MonoBehaviour
             m_startingIntroSet = true;
             m_startingIntroY = transform.position.y;
         }
-        m_introPanel.transform.DOMoveY(m_startingIntroY - 575f, 0f);
-        m_introPanel.transform.DOMoveY(m_startingIntroY - 525f, 0.5f);
+        m_introPanel.transform.DOMoveY(m_startingIntroY - 425, 0f);
+        m_introPanel.transform.DOMoveY(m_startingIntroY - 375, 0.5f);
     }
 
     public void ToggleIntro()
@@ -65,8 +65,7 @@ public class CityPanel : MonoBehaviour
                 m_startingIntroSet = true;
                 m_startingIntroY = transform.position.y;
             }
-
-            m_introPanel.transform.DOMoveY(m_startingIntroY - 525f, 0.5f);
+            m_introPanel.transform.DOMoveY(m_startingIntroY - 375, 0.5f);
             m_isIntroOpen = false;
             if (m_introPanelBlocker != null) m_introPanelBlocker.gameObject.SetActive(false);
             //m_introPanel.gameObject.SetActive(false);

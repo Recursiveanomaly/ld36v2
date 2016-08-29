@@ -8,6 +8,8 @@ public class Player : SingletonMonoBehaviour<Player>
 
     Dictionary<string, List<string>> m_connectedWords = new Dictionary<string,List<string>>();
 
+    int m_unlockCount = 0;
+
     void Awake()
     {
         SetIsKnown("make", true);
@@ -66,6 +68,11 @@ public class Player : SingletonMonoBehaviour<Player>
 
     }
 
+    public int UnlockCount()
+    {
+        return m_unlockCount;
+    }
+
     public bool IsKnown(string pictograph)
     {
         pictograph = SanitizeString(pictograph);
@@ -80,6 +87,7 @@ public class Player : SingletonMonoBehaviour<Player>
         if (string.IsNullOrEmpty(pictograph)) return;
 
         m_knownPictographs[pictograph] = isKnown;
+        if (isKnown) m_unlockCount++;
 
         if (KnownPictographsChanged != null) KnownPictographsChanged();
     }
