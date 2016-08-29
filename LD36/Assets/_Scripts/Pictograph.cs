@@ -7,8 +7,11 @@ public class Pictograph : MonoBehaviour
     public string pictographName;
     public TextMesh answer;
 
+    public TabletFace m_parentFace;
+
     void Start()
     {
+        m_parentFace = GetComponentInParent<TabletFace>();
         CheckIfKnown();
         Player.Instance.KnownPictographsChanged += new Action(CheckIfKnown);
     }
@@ -21,6 +24,8 @@ public class Pictograph : MonoBehaviour
             {
                 answer.text = pictographName.ToUpper();
                 answer.gameObject.SetActive(true);
+
+                if (m_parentFace != null) m_parentFace.WordSolved();
             }
         }
         else
