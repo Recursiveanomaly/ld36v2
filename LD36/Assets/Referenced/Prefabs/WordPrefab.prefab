@@ -10,13 +10,14 @@ GameObject:
   - 224: {fileID: 22458944}
   - 222: {fileID: 22254394}
   - 114: {fileID: 11467222}
+  - 114: {fileID: 11425854}
   m_Layer: 5
   m_Name: Strike
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &131924
 GameObject:
   m_ObjectHideFlags: 0
@@ -67,6 +68,17 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: New Text
+--- !u!114 &11425854
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 107924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43cf767314e19694cbf426aeb70ef99e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11467222
 MonoBehaviour:
   m_ObjectHideFlags: 1

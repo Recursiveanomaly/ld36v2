@@ -176,6 +176,7 @@ public class Player : SingletonMonoBehaviour<Player>
         if (isKnown) m_unlockCount++;
 
         if (KnownPictographsChanged != null) KnownPictographsChanged();
+        if (KnownPictographsStringChanged != null) KnownPictographsStringChanged(pictograph, isKnown);
     }
 
     public static string SanitizeString(string pictograph)
@@ -219,4 +220,5 @@ public class Player : SingletonMonoBehaviour<Player>
     }
 
     public event Action KnownPictographsChanged;
+    public event Action<string, bool> KnownPictographsStringChanged;
 }
