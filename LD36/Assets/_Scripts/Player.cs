@@ -60,6 +60,24 @@ public class Player : SingletonMonoBehaviour<Player>
         "sleep"      ,
         "snake"      ,
         "ram"        ,
+
+        //red herrings
+        "goat"       ,
+        "wheat"      ,
+        "wine"       ,
+        "spear"      ,
+        "fish"       ,
+        "net"        ,
+        "priest"     ,
+        "bull"       ,
+        "cow"        ,
+        "grapes"     ,
+        "olive"      ,
+        "oil"        ,
+        "shield"     ,
+        "key"        ,
+        "helmet"     ,
+        "speak"      ,
     };
 
     int m_unlockCount = 0;
