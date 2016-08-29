@@ -1591,7 +1591,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   documentText: "This tablet was found in a dockyard. \n\nThe area had many buildings
     that could be warehouses or fish markets."
-  archeologistName: 
+  archeologistName: Ovid R. Sellers
   carbonDate: 1375 B.C.
   artifactName: B-1854
 --- !u!114 &11408098

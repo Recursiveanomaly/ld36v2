@@ -1323,7 +1323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b7a1dd488799e342a71c3cb96bd0720, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pictographName: hero
+  pictographName: man
   answer: {fileID: 10249522}
 --- !u!114 &11403774
 MonoBehaviour:
@@ -1442,7 +1442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b7a1dd488799e342a71c3cb96bd0720, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pictographName: steal
+  pictographName: hurt
   answer: {fileID: 10291924}
 --- !u!114 &11476540
 MonoBehaviour:
@@ -1723,7 +1723,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 95d674a093ac2b64b9749c231cd0af43, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 713de1c8be006b64aaf1c47abc85818c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
