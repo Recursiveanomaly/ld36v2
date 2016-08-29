@@ -28,6 +28,19 @@ public class GamePanelManager : SingletonMonoBehaviour<GamePanelManager>
         if (m_tabletPanel != null) m_tabletPanel.gameObject.SetActive(false);
     }
 
+    void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            QuitGame();
+        }
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
     public bool DidUGUICaptureInput()
     {
         return GamePanelManager.Instance.m_eventSystem != null && GamePanelManager.Instance.m_eventSystem.currentSelectedGameObject != null;
