@@ -10,8 +10,10 @@ public class Player : SingletonMonoBehaviour<Player>
 
     int m_unlockCount = 0;
 
-    void Awake()
+    protected virtual void Awake()
     {
+        base.Awake();
+
         SetIsKnown("make", true);
         SetIsKnown("has", true);
         SetIsKnown("are", true);
@@ -21,10 +23,9 @@ public class Player : SingletonMonoBehaviour<Player>
         SetIsKnown("for", true);
         SetIsKnown("man", true);
         SetIsKnown("woman", true);
-
         SetIsKnown("no", true);
-
         SetIsKnown("in", true);
+        m_unlockCount = 0; // don't count freebies
 
 
         m_connectedWords["love"] = new List<string>() { "marry", "like", "relish", "regard", "wed", "mate", "bond", "engage" };
