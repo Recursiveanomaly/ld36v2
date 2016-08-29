@@ -69,6 +69,8 @@ public class CityPanel : MonoBehaviour
             m_isIntroOpen = false;
             if (m_introPanelBlocker != null) m_introPanelBlocker.gameObject.SetActive(false);
             //m_introPanel.gameObject.SetActive(false);
+
+            AudioManager.Instance.PlayPaper();
         }
     }
 
@@ -86,6 +88,8 @@ public class CityPanel : MonoBehaviour
             m_isIntroOpen = true;
             if (m_introPanelBlocker != null) m_introPanelBlocker.gameObject.SetActive(true);
             //m_introPanel.gameObject.SetActive(true);
+
+            AudioManager.Instance.PlayPaper();
         }
     }
 }

@@ -38,6 +38,8 @@ public class GuessPopup : MonoBehaviour
             m_helpStartPositionX = m_helpRoot.gameObject.transform.position.x;
         }
 
+        AudioManager.Instance.PlayPaper();
+
         m_helpRoot.transform.DOMoveX(m_helpStartPositionX + 400, 0.5f);
     }
 
@@ -48,6 +50,8 @@ public class GuessPopup : MonoBehaviour
             m_helpStartSaved = true;
             m_helpStartPositionX = m_helpRoot.gameObject.transform.position.x;
         }
+
+        AudioManager.Instance.PlayPaper();
 
         m_helpRoot.transform.DOMoveX(m_helpStartPositionX, 0.5f);
     }
@@ -85,17 +89,23 @@ public class GuessPopup : MonoBehaviour
             // celebrate!
             Player.Instance.SetIsKnown(m_currentPictograph.pictographName, true);
             Close();
+
+            AudioManager.Instance.PlaySolvedWord();
         }
         else
         {
             // sadface
             m_inputField.text = "";
             FocusInputBox();
+
+            AudioManager.Instance.PlayGuessedWrong();
         }
     }
 
     public void Close()
     {
         TabletPanel.Instance.ResetToDefault();
+
+        AudioManager.Instance.PlayUIClick();
     }
 }

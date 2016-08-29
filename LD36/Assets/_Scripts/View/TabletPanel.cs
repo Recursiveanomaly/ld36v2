@@ -68,6 +68,8 @@ public class TabletPanel : SingletonMonoBehaviour<TabletPanel>
         m_guessPopup.gameObject.SetActive(true);
         m_guessPopup.FocusInputBox();
         m_currentState = eTabletViewState.kInfoPopup;
+
+        AudioManager.Instance.PlayUIClick();
     }
 
     public void ShowInfoPopup()
@@ -80,15 +82,19 @@ public class TabletPanel : SingletonMonoBehaviour<TabletPanel>
         m_infoPopup.Show();
         m_infoPopup.Setup(m_cityTabletGroup.GetCurrentTabletFace());
         m_currentState = eTabletViewState.kInfoPopup;
+
+        AudioManager.Instance.PlayPaper();
     }
 
     public void NextTabletPressed()
     {
         if (m_cityTabletGroup != null) m_cityTabletGroup.NextTablet();
+        AudioManager.Instance.SwitchTablet();
     }
 
     public void PreviousTabletPressed()
     {
         if (m_cityTabletGroup != null) m_cityTabletGroup.PreviousTablet();
+        AudioManager.Instance.SwitchTablet();
     }
 }

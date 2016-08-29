@@ -92,5 +92,7 @@ public class InfoPopup : MonoBehaviour
     public void Close()
     {
         TabletPanel.Instance.ResetToDefault();
+
+        AudioManager.Instance.PlayPaper();
     }
 }

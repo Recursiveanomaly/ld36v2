@@ -49,6 +49,8 @@ public class GamePanelManager : SingletonMonoBehaviour<GamePanelManager>
         {
             m_tabletPanel.gameObject.SetActive(false);
         }
+
+        AudioManager.Instance.SwitchBetween();
     }
 
     public void ShowTabletPanel(int city)
@@ -85,5 +87,7 @@ public class GamePanelManager : SingletonMonoBehaviour<GamePanelManager>
             m_tabletPanel.gameObject.SetActive(true);
             m_tabletPanel.m_infoPopup.Peek();
         }
+
+        AudioManager.Instance.SwitchBetween();
     }
 }
