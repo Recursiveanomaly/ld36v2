@@ -89,6 +89,8 @@ public class Player : SingletonMonoBehaviour<Player>
         "weapon"     ,
         "mirror"     ,
         "yarn"       ,
+        "cloak"      ,
+        "temple"     ,
     };
 
     int m_unlockCount = 0;
