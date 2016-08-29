@@ -17,7 +17,12 @@ public class CityPanel : MonoBehaviour
         if (m_introPanel != null)
         {
             m_introPanel.gameObject.SetActive(true);
-            m_startingIntroY = m_introPanel.transform.position.y;
+            if (!m_startingIntroSet)
+            {
+                m_startingIntroSet = true;
+                m_startingIntroY = m_introPanel.transform.position.y;
+            }
+            m_introPanel.transform.position = new Vector3(m_introPanel.transform.position.x, m_startingIntroY + 375, m_introPanel.transform.position.z);
             if (m_introPanelBlocker != null) m_introPanelBlocker.gameObject.SetActive(true);
         }
     }
@@ -38,10 +43,10 @@ public class CityPanel : MonoBehaviour
         if (!m_startingIntroSet)
         {
             m_startingIntroSet = true;
-            m_startingIntroY = transform.position.y;
+            m_startingIntroY = m_introPanel.transform.position.y;
         }
-        m_introPanel.transform.DOMoveY(m_startingIntroY - 425, 0f);
-        m_introPanel.transform.DOMoveY(m_startingIntroY - 375, 0.5f);
+        m_introPanel.transform.DOMoveY(m_startingIntroY - 50, 0f);
+        m_introPanel.transform.DOMoveY(m_startingIntroY, 0.5f);
     }
 
     public void ToggleIntro()
@@ -63,9 +68,9 @@ public class CityPanel : MonoBehaviour
             if (!m_startingIntroSet)
             {
                 m_startingIntroSet = true;
-                m_startingIntroY = transform.position.y;
+                m_startingIntroY = m_introPanel.transform.position.y;
             }
-            m_introPanel.transform.DOMoveY(m_startingIntroY - 375, 0.5f);
+            m_introPanel.transform.DOMoveY(m_startingIntroY, 0.5f);
             m_isIntroOpen = false;
             if (m_introPanelBlocker != null) m_introPanelBlocker.gameObject.SetActive(false);
             //m_introPanel.gameObject.SetActive(false);
@@ -81,10 +86,10 @@ public class CityPanel : MonoBehaviour
             if(!m_startingIntroSet)
             {
                 m_startingIntroSet = true;
-                m_startingIntroY = transform.position.y;
+                m_startingIntroY = m_introPanel.transform.position.y;
             }
 
-            m_introPanel.transform.DOMoveY(m_startingIntroY, 0.5f);
+            m_introPanel.transform.DOMoveY(m_startingIntroY + 375, 0.5f);
             m_isIntroOpen = true;
             if (m_introPanelBlocker != null) m_introPanelBlocker.gameObject.SetActive(true);
             //m_introPanel.gameObject.SetActive(true);
