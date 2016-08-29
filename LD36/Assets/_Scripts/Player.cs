@@ -55,7 +55,7 @@ public class Player : SingletonMonoBehaviour<Player>
 
         m_connectedWords["tree"] = new List<string>() { "forest", "sapling", "seedling", "timber" };
         m_connectedWords["hurt"] = new List<string>() { "die", "injury", "injure", "stab", "cripple", "break", "deform", "impair", "mangle", "ruin"};
-        m_connectedWords["witch"] = new List<string>() { "magician", "enchanter", "mage", "sorcerer", "conjurer", "witche" };
+        m_connectedWords["witch"] = new List<string>() { "magician", "enchanter", "mage", "sorcerer", "conjurer", "witche", "priest", "priestess" };
         m_connectedWords["guard"] = new List<string>() { "protect", "save", "resue", "defend", "defender", "ward", "warden", "escort", "shield" };
         m_connectedWords["gold"] = new List<string>() { "coin", };
         m_connectedWords["hero"] = new List<string>() { "champion", };
