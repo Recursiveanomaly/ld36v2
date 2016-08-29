@@ -1013,11 +1013,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61514d0e7af0d6e4b8b880ea77f48adb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  documentText: This tablet was found alongside a picture of a single warrior surrounding
+  documentText: This artefact was found alongside a mural of a single warrior surrounding
     by enemies.
-  archeologistName: 
+  archeologistName: Churchill Babington
   carbonDate: 2150 B.C.
-  artifactName: B-6874
+  artifactName: B-3227
 --- !u!114 &11494586
 MonoBehaviour:
   m_ObjectHideFlags: 1

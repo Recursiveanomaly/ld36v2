@@ -1281,10 +1281,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61514d0e7af0d6e4b8b880ea77f48adb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  documentText: No Data
-  archeologistName: 
-  carbonDate: 1350 B.C.
-  artifactName: A-1672
+  documentText: "This piece seems to be one longer story. \n\nThe edges are burnt
+    as it was found in a firepit."
+  archeologistName: Arthur Evans
+  carbonDate: 2490 B.C.
+  artifactName: AA-1672
 --- !u!114 &11490206
 MonoBehaviour:
   m_ObjectHideFlags: 1

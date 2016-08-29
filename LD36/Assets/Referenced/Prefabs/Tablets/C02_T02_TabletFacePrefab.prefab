@@ -1456,15 +1456,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61514d0e7af0d6e4b8b880ea77f48adb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  documentText: 'This tablet was found in a Church.
+  documentText: 'This specimen was found in a Temple.
 
 
     It appears to have been attached to a wall in one of the central rooms.
 
 
     Other images nearby show children starving and dying of thirst.'
-  archeologistName: 
-  carbonDate: 1350 B.C.
+  archeologistName: "Fr\xE9d\xE9rique Audoin-Rouzeau"
+  carbonDate: 2018 B.C.
   artifactName: B-7865
 --- !u!114 &11420854
 MonoBehaviour:

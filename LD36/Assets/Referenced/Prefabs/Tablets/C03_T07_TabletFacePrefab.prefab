@@ -2335,10 +2335,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61514d0e7af0d6e4b8b880ea77f48adb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  documentText: No Data
-  archeologistName: 
-  carbonDate: 1350 B.C.
-  artifactName: A-9001
+  documentText: "This tablet also is clearly one piece of a longer story. \n\nIt was
+    found in the throne room, surrounded by immeasurable riches."
+  archeologistName: Arthur Evans
+  carbonDate: 1498 B.C.
+  artifactName: CC-9074
 --- !u!114 &11430520
 MonoBehaviour:
   m_ObjectHideFlags: 1

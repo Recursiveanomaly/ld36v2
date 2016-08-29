@@ -1589,9 +1589,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61514d0e7af0d6e4b8b880ea77f48adb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  documentText: No Data
-  archeologistName: 
-  carbonDate: 1350 B.C.
+  documentText: "It is pure luck this tablet survives. It was sourced from a  battlefield.
+    \n\nIt was very nearly destroyed in the chaos."
+  archeologistName: Howard Carter
+  carbonDate: 2122 B.C.
   artifactName: A-9001
 --- !u!114 &11425944
 MonoBehaviour:

@@ -1586,10 +1586,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61514d0e7af0d6e4b8b880ea77f48adb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  documentText: No Data
-  archeologistName: 
-  carbonDate: 1350 B.C.
-  artifactName: A-1672
+  documentText: This piece comes from a marketplace find on the outskirts of a road
+    to Knossos.
+  archeologistName: Louis Leakey
+  carbonDate: 1870 B.C.
+  artifactName: A-0892
 --- !u!212 &21210038
 SpriteRenderer:
   m_ObjectHideFlags: 1

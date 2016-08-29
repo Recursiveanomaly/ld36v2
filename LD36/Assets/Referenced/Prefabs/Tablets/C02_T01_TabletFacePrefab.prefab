@@ -480,7 +480,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 115340}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6, y: 0, z: 0}
+  m_LocalPosition: {x: 6.25, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 458134}
@@ -1562,8 +1562,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   documentText: "This was found in a large building with many tools for caring for
     animals like a stable. \n\nThe bones of several beasts of burden were found nearby."
-  archeologistName: 
-  carbonDate: 1450 B.C.
+  archeologistName: Robert Ballard
+  carbonDate: 1892 B.C.
   artifactName: B-4861
 --- !u!114 &11481452
 MonoBehaviour:
@@ -1576,7 +1576,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b7a1dd488799e342a71c3cb96bd0720, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pictographName: money
+  pictographName: horse
   answer: {fileID: 10293288}
 --- !u!114 &11498286
 MonoBehaviour:

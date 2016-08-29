@@ -1972,10 +1972,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61514d0e7af0d6e4b8b880ea77f48adb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  documentText: No Data
-  archeologistName: 
-  carbonDate: 1350 B.C.
-  artifactName: A-1672
+  documentText: 'This tablet was found in a palace.
+
+
+    The palace showed signs of having been rebuilt. '
+  archeologistName: Jens Jacob Asmussen Worsaae
+  carbonDate: 2120 B.C.
+  artifactName: C-2378
 --- !u!114 &11499946
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2135,7 +2138,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 38d1de79cfee97a4490982213208c38d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 94d2aad441243ba40a4a342139b5ef12, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

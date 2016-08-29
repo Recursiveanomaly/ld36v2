@@ -1933,8 +1933,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61514d0e7af0d6e4b8b880ea77f48adb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  documentText: This tablet was found inside a gladiator's colosseum.
-  archeologistName: 
+  documentText: This particular piece was recovered from the remains of a fighting
+    pit.
+  archeologistName: T.E. Lawrence
   carbonDate: 2050 B.C.
   artifactName: B-5131
 --- !u!114 &11471270

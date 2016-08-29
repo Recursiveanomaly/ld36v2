@@ -1573,10 +1573,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61514d0e7af0d6e4b8b880ea77f48adb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  documentText: No Data
-  archeologistName: 
-  carbonDate: 2150 B.C.
-  artifactName: B-6874
+  documentText: "This is one of two pieces that seem part of a larger story. \n\nUnfortunately
+    only this and BB-0371 have been found. "
+  archeologistName: Arthur Evans
+  carbonDate: 2452 B.C.
+  artifactName: BB-1879
 --- !u!114 &11495392
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -1619,9 +1619,9 @@ MonoBehaviour:
 
 
     The area is known to have housed wealthy merchants.'
-  archeologistName: 
-  carbonDate: 2150 B.C.
-  artifactName: B-6874
+  archeologistName: Geoff Bailey
+  carbonDate: 2230 B.C.
+  artifactName: B-0022
 --- !u!114 &11444634
 MonoBehaviour:
   m_ObjectHideFlags: 1

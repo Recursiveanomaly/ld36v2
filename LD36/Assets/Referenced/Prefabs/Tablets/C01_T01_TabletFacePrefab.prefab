@@ -1255,9 +1255,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61514d0e7af0d6e4b8b880ea77f48adb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  documentText: No Data
-  archeologistName: 
-  carbonDate: 1350 B.C.
+  documentText: "This tablet was found in a small village. In what seems to be a burnt
+    out dwelling. \n\nScattered about were the artefacts of daily life: clothes, pots,
+    and other tools."
+  archeologistName: Gertrude Bell
+  carbonDate: 2500 B.C.
   artifactName: A-6324
 --- !u!114 &11456450
 MonoBehaviour:

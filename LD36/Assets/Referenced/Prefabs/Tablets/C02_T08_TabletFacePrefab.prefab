@@ -1401,12 +1401,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61514d0e7af0d6e4b8b880ea77f48adb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  documentText: "This is believed to be part of a larger set of tablets.\n\nUnfortunately,\r
-    this was the only one that could be recovered.\n\nIt was found amoung great tropheys
-    of battle."
-  archeologistName: 
-  carbonDate: 2150 B.C.
-  artifactName: B-6874
+  documentText: "This is the second of two tablets in what appears to be a longer
+    tale.\n\nUnfortunately,\r this was the only other one that could be recovered.\n\nIt
+    was found amoung great trophies of battle."
+  archeologistName: Arthur Evans
+  carbonDate: 2452 B.C.
+  artifactName: BB-0371
 --- !u!114 &11475646
 MonoBehaviour:
   m_ObjectHideFlags: 1

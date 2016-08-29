@@ -1869,9 +1869,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   documentText: This tablet was found in city that was abandoned due to drought.
-  archeologistName: 
-  carbonDate: 1350 B.C.
-  artifactName: A-6324
+  archeologistName: Sir Francis Knowles, 5th Baronet
+  carbonDate: 1499 B.C.
+  artifactName: C-1278
 --- !u!114 &11452486
 MonoBehaviour:
   m_ObjectHideFlags: 1
