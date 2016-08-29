@@ -22,43 +22,27 @@ public class InfoPopup : MonoBehaviour
     }
 
     bool m_isHidden = true;
-    bool m_startingXSet = false;
-    float m_startingX;
-
+    public GameObject m_infoIn;
+    public GameObject m_infoOut;
 
     public void ResetPeek()
     {
-        if (!m_startingXSet)
-        {
-            m_startingX = m_tweenGUI.transform.position.x;
-            m_startingXSet = true;
-        }
         gameObject.SetActive(false);
-        m_tweenGUI.transform.DOMoveX(m_startingX, 0f);
+        m_tweenGUI.transform.DOMoveX(m_infoOut.transform.position.x + 100, 0f);
     }
 
     public void Peek(float time = 0.5f)
     {
-        if (!m_startingXSet)
-        {
-            m_startingX = m_tweenGUI.transform.position.x;
-            m_startingXSet = true;
-        }
         gameObject.SetActive(false);
         m_isHidden = true;
-        m_tweenGUI.transform.DOMoveX(m_startingX - 65, time);
+        m_tweenGUI.transform.DOMoveX(m_infoOut.transform.position.x, time);
     }
 
     public void Show()
     {
-        if (!m_startingXSet)
-        {
-            m_startingX = m_tweenGUI.transform.position.x;
-            m_startingXSet = true;
-        }
         gameObject.SetActive(true);
         m_isHidden = false;
-        m_tweenGUI.transform.DOMoveX(m_startingX - 665, 0.5f);
+        m_tweenGUI.transform.DOMoveX(m_infoIn.transform.position.x, 0.5f);
     }
 
     public void Setup(TabletFace tablet)

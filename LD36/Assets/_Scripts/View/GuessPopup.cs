@@ -13,8 +13,8 @@ public class GuessPopup : MonoBehaviour
     Pictograph m_currentPictograph;
 
     public GameObject m_helpRoot;
-    float m_helpStartPositionX;
-    bool m_helpStartSaved = false;
+    public GameObject m_wordBankIn;
+    public GameObject m_wordBankOut;
 
     public void Setup(Pictograph pictograph)
     {
@@ -32,39 +32,21 @@ public class GuessPopup : MonoBehaviour
 
     public void ShowHelp()
     {
-        if (!m_helpStartSaved)
-        {
-            m_helpStartSaved = true;
-            m_helpStartPositionX = m_helpRoot.gameObject.transform.position.x;
-        }
-
         AudioManager.Instance.PlayPaper();
 
-        m_helpRoot.transform.DOMoveX(m_helpStartPositionX + 400, 0.5f);
+        m_helpRoot.transform.DOMoveX(m_wordBankIn.transform.position.x, 0.5f);
     }
 
     public void HideHelp()
     {
-        if (!m_helpStartSaved)
-        {
-            m_helpStartSaved = true;
-            m_helpStartPositionX = m_helpRoot.gameObject.transform.position.x;
-        }
-
         AudioManager.Instance.PlayPaper();
 
-        m_helpRoot.transform.DOMoveX(m_helpStartPositionX, 0.5f);
+        m_helpRoot.transform.DOMoveX(m_wordBankOut.transform.position.x, 0.5f);
     }
 
     public void ResetHelp()
     {
-        if (!m_helpStartSaved)
-        {
-            m_helpStartSaved = true;
-            m_helpStartPositionX = m_helpRoot.gameObject.transform.position.x;
-        }
-
-        m_helpRoot.gameObject.transform.position = new Vector3(m_helpStartPositionX, m_helpRoot.gameObject.transform.position.y, m_helpRoot.gameObject.transform.position.z);
+        m_helpRoot.gameObject.transform.position = new Vector3(m_wordBankOut.transform.position.x, m_helpRoot.gameObject.transform.position.y, m_helpRoot.gameObject.transform.position.z);
     }
 
     void Update()
