@@ -78,6 +78,17 @@ public class Player : SingletonMonoBehaviour<Player>
         "key"        ,
         "helmet"     ,
         "speak"      ,
+        "beer"       ,
+        "glass"      ,
+        "cloth"      ,
+        "mother"     ,
+        "father"     ,
+        "brother"    ,
+        "sister"     ,
+        "dagger"     ,
+        "weapon"     ,
+        "mirror"     ,
+        "yarn"       ,
     };
 
     int m_unlockCount = 0;
